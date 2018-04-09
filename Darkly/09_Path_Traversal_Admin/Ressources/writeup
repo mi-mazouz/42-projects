@@ -1,0 +1,15 @@
+- On regarde s'il existe un fichier robots.txt, celui-ci étant présent à la racine de la plupart des sites web et contenant des informations telles que des adresses interdites d'accès pour les robots de référencement.
+
+- On accede à l'adresse [Darkly_IP]/robots.txt qui contient deux paths inaccessible aux robots : '/whatever' et '/.hidden'.
+
+- Ici on s'intéresse à /whatever. En se rendant à cette adresse on trouve un fichier htpasswd.
+
+- lié à un fichier .htaccess, le .htpasswd contient un ou plusieurs couples login:password (crypté) donnant accès à un repertoire protégé sur un serveur Apache.
+
+- On ouvre donc ce fichier pour y trouver le login root et le mot de passe associé crypté en md5.
+
+- Le hash décrypté correspond au mot de passe 'dragon', reste à trouver quel est le répertoire caché.
+
+- On essaye l'URL /admin, souvent utilisé pour accéder à l'interface d'administration d'un site web.
+
+- C'est bien le cas ici, on se connecte donc à l'interface avec le couple root/dragon pour afficher le flag ainsi que des gifs de toute beauté.

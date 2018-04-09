@@ -1,0 +1,13 @@
+- À partir de l'index du site, on clique sur le bouton 'ADD IMAGE' qui nous envoie sur une page d'upload.
+
+- On voit alors en inspectant la page qu'il s'agit d'un formulaire avec un input de type file.
+
+- On s'appercoit que le formulaire accepte uniquement les fichier de type image telle que jpg,jpeg etc.
+
+- On essaye donc de forcer l'upload d'un fichier d'un autre type en envoyant notre propre requête avec curl:
+`curl -X POST -H 'Content-Type: multipart/form-data' -F 'Upload=send' -F 'uploaded=@empty.php;type=image/jpeg' http://Iso_Adress_IP/index.php?page=upload#`
+
+- Le formulaire accepte uniquement les données de types multipart/form-data donc on set cette valeur dans le Content-Type,
+  ensuite on spécifie le fichier a envoyer en notifiant qu'il s'agit d'un fichier jpeg. On donne le nom du formulaire à viser et l'adresse de la requête.
+
+- curl nous renvoie le code html et le flag s'y trouve.

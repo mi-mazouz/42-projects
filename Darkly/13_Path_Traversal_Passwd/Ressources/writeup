@@ -1,0 +1,15 @@
+- Nous avons vu grâce aux différentes failles trouvées jusqu'ici qu'il est parfois possible d'accéder à certaines zones cachées/interdites de l'arborescence du site côté serveur.
+
+- En outre , nos recherches sur les attaques de type 'Path Traversal' nous ont appris qu'il existe une autre attaque basée sur le même principe.
+
+- Cette fois-ci nous allons tenter de remonter dans le filesystem du serveur, au delà de la racine du site, via l'utilisation de l'opérateur '../'
+
+- On altère la page demandée en entrant une url du type : [Darkly_IP_Address]?page=../../
+
+- En changeant le nombre d'opérateurs, le serveur nous renvoie différents messages en guise d'indices.
+
+- Tout en remontant dans l'arborescence, on ajoute le path d'un fichier commun à tous les systèmes UNIX qui contient des informations sur les sessions utilisateurs, '/etc/passwd'
+
+- On finit par remonter suffisament pour atteindre la racine et trouver le fichier '/etc/passwd', ainsi le serveur nous renvoie le flag.
+
+[Darkly_IP_Address]/?page=../../../../../../../etc/passwd

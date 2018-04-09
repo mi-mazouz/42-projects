@@ -1,0 +1,7 @@
+- Depuis l'index, on clique sur le lien "Leave a feedback" pour accéder à un formulaire contenant deux champs de type input.
+
+- En inspectant ces champs, on peut jouer sur les attributs, notamment 'maxlength'.
+
+- Ainsi on injecte du code HTML pour obtenir le flag.
+
+<div style="background-color:red;postiion:absolute;height:1000px;width:1000px"> salut </div>

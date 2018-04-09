@@ -1,0 +1,31 @@
+# une map avec un gros chemin inutile et pas beaucoup de fourmis... lol
+5
+##start
+entree 5 6
+##end
+lasortie 2 0
+1 0 0
+2 0 0
+3 0 0
+c 0 0
+d 0 0
+4 0 0
+5 0 0
+6 0 0
+7 0 0
+a 0 0
+b 0 0
+entree-a
+a-b
+b-lasortie
+entree-1
+1-2
+3-2
+a-c
+c-d
+4-3
+4-5
+5-6
+lasortie-d
+6-7
+7-lasortie

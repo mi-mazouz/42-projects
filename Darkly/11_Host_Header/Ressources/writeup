@@ -1,0 +1,10 @@
+- Depuis l'index du site, on clique sur le lien 'BornToSec' en bas de page.
+
+- En inspectant le code HTML de la page, on repère une portion de texte en commentaire contenant deux indices :
+"You must cumming from : "https://www.nsa.gov/" to go to the next step"
+"Let's use this browser : "ft_bornToSec". It will help you a lot."
+
+- On en déduis qu'il faut modifier le header avant d'envoyer la requête sur la page, en l'occurence les champs 'Referer' et 'User-Agent'.
+
+- On envoie notre requête custom avec curl pour découvrir le flag
+`curl -X GET -H "Referer: https://www.nsa.gov/" -A "ft_bornToSec" "[Darkly_IP_Address]/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c" | grep flag`

@@ -1,0 +1,11 @@
+- À partir de l'index du site, on clique sur le bouton sign in, puis sur le lien 'I forgot my password' pour arriver sur la page recover.
+
+- On inspecte la page pour afficher le formulaire lié au bouton submit, celui-ci contient un champ caché (type="hidden").
+
+- Ce champ est un input ayant pour valeur une adresse mail, ici webmaster@borntosec.com.
+
+- Cette adresse est surement récuperée côté serveur pour envoyer le mail de récuperation/reset de mot de passe.
+
+- Ainsi on peut rediriger le mail en changeant la valeur de l'input, via l'inspecteur ou en supprimant l'attribut hidden pour afficher l'input directement sur la page.
+
+- On clique enfin sur le bouton submit pour faire apparaître le flag correspond à cette faille sur la page.

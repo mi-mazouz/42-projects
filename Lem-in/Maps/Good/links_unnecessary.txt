@@ -1,0 +1,32 @@
+10
+##start
+5 0 0
+8 4 4
+9 5 8
+6 2 3
+7 0 0
+##end
+sortie 3 3
+lol 0 0
+3 0 0
+zob 7 8
+yiss 0 0
+la 15 6
+gni 45 6
+12 8 6
+grrr 7 88
+5-zob
+5-6
+la-gni
+6-lol
+la-yiss
+3-lol
+3-sortie
+grrr-7
+6-7
+gni-12
+7-sortie
+5-yiss
+12-grrr
+8-9
+9-sortie

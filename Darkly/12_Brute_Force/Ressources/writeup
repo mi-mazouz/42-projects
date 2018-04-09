@@ -1,0 +1,11 @@
+- Depuis l'index du site, on clique sur le bouton 'SIGN IN' pour accéder au formulaire de connection.
+
+- N'ayant trouvé aucun indice particulier pour se connecter, on tente un bruteforce sur le login 'admin'
+
+- Les requêtes pour le formulaire de connection prennent du temps donc on utilise de petits dictionnaires contenant les mots de passe les plus courants.
+
+- On utilise un script shell qui va lire chaque ligne du fichier passé en paramètre et insérer son contenu dans l'url de la requête
+
+- Les requêtes sont effectuées via curl et on affiche toute ligne du code HTML contenant le mot clef 'flag'
+
+`./bruteforce.sh dictionary.txt`

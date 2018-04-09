@@ -1,0 +1,9 @@
+- On s'interesse au path /.hidden trouvé précédemment dans le fichier robots.txt
+
+- Il contient un fichier README ainsi des liens vers des sous-répertoire contenant eux-mêmes un fichier README et d'autres sous-répertoire.
+
+- On créer un script pour automatiser le téléchargement de tous les fichiers README présents dans l'arborescence de /.hidden (scraping.sh)
+
+- Celui-ci utilisera la commande wget de manière récursive en récupérant uniquement les fichiers README.
+
+- On affiche ensuite le contenu des fichiers en isolant le flag grâce à une regex.

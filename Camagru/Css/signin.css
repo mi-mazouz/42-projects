@@ -1,0 +1,239 @@
+body
+{
+	background-color: #F8F7F7;
+}
+
+UL
+{
+	list-style-type:none;
+}
+
+LABEL
+{
+		display: inline-block;
+	padding: 4px;
+	border-radius: 3px;
+    color: white;
+    background-color: #45AEFF;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+header
+{
+	height: 30px;
+	border: 0.1px solid #D8D8D8;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+
+main
+{
+	height: 650px;
+	margin: auto;
+	margin-bottom: 3%;
+	padding-top: 5%;
+	text-align: center;
+}
+
+footer
+{
+	display: inline-block;
+	width: 100%;
+	font-family: Minecraft;
+	text-align: center;
+}
+
+.pics, #no_pics
+{
+	max-width: 90%;
+	margin-top: 2%;
+}
+
+.input
+{
+	width: 225px;
+	height: 27px;
+	margin: 10px;
+}
+
+.onglets
+{
+	margin: 0px 0px 0px 20%;
+	color: #A4A4A4;
+	font-size: 1.5em;
+	padding: 0px;
+	float: left;
+}
+
+#return
+{
+	margin-bottom: 10px;
+}
+
+.title
+{
+	color: #A4A4A4;
+	font-size: 1.5em;
+}
+
+A
+{
+	text-decoration: none;
+}
+
+.button
+{
+	margin-top: 10px;
+	padding: 2px 25px 2px 25px;
+	background-color: #45AEFF;
+	border: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 0.8em;
+	border-radius: 3px;
+}
+
+.mini_pics
+{
+	width: 20%;
+	height: 15%;
+}
+
+#none A
+{
+	font-size: 0.7em;
+	color: #A4A4A4;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#none
+{
+	padding: inherit;
+	display: none;
+}
+
+#link:hover #none
+{
+	display: block;
+}
+
+#webcam
+{
+	height: 65%;
+	width: 80%;
+	margin: auto;
+}
+
+#form
+{
+	border: 0.1px solid #D8D8D8;
+	margin-bottom: 25px;
+	background-color: #FEFEFE;
+	display: none;
+	text-align: center;
+}
+
+#startbutton
+{
+	margin-bottom: 5%;
+	padding: 2px 25px 2px 25px;
+	background-color: #d44c2f;
+	border: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 0.8em;
+	border-radius: 3px;
+	margin-top: 10%;
+}
+
+#video, .stream
+{
+	max-width: 90%;
+	height: inherit;
+	margin-left: 5%;
+	margin-top: 2.5%;
+}
+
+#shoot
+{
+	float: left;
+	max-width: 54%;
+	height: 100%;
+	border-right: 3px solid #D8D8D8;
+}
+
+#pics_list
+{
+	overflow: auto;
+	height: 100%;
+	margin-top: 2.5%;
+}
+
+#canvas
+{
+	display: none;
+}
+
+#msg_change
+{
+	display: none;
+	font-size: 0.85em;
+	color: red;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.inputfile
+{
+	width: 0.1px;
+	height: 0.1px;
+}
+
+#stream
+{
+	position: relative;
+}
+
+#copyright
+{
+	font-size: 0.8em;
+}
+
+#upload
+{
+	width: 86px;
+}
+
+#upload_img
+{
+	display: none;
+}
+
+#superpose_img
+{
+	display: none;
+}
+
+#setting
+{
+	text-align: center;
+}
+
+@media screen and (max-width: 768px)
+{
+	.onglets
+	{
+		margin: 0px 0px 0px 14%;
+		font-size: 1em;
+	}
+
+	#pics_list
+	{
+		margin: inherit;
+		max-width: 100%;
+	}
+
+}

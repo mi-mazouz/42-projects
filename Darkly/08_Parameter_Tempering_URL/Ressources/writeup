@@ -1,0 +1,5 @@
+- On inspecte le footer du site et on trouve des liens vers plusieurs réseaux sociaux.
+
+- On voit que les liens renvoi vers l'index du site avec des parametres dans l'url (page et site).
+
+- On modifie le parametre site, ce qui nous donne le flag. Ceci veut dire que les parametres rentrés dans l'URl ne sont pas checkés.

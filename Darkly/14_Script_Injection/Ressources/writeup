@@ -1,0 +1,11 @@
+- On clique sur l'image rsa_prism depuis la page d'acceuil.
+
+- On arrive sur une page où se trouve une image, on remarque les parametres dans l'url.
+
+- On inspecte la page et on voit qu'une requête GET est effectuée, le header nous informe que différents types de contenu sont acceptés notament le type text/html.
+
+- Le paramatre src dans l'url doit correspondre à une image en base64, on injecte donc un script dans cet encodage pour obtenir le flag.
+
+<script>alert("toto")</script> -> PHNjcmlwdD5hbGVydCgidG90byIpPC9zY3JpcHQ+
+
+http://ISO_IP_Adress/?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgidG90byIpPC9zY3JpcHQ+

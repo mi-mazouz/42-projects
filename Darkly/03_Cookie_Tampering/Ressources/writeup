@@ -1,0 +1,5 @@
+- Si nous inspectons nos cookies, nous en voyons un qui se nomme 'I_am_admin' qui a pour valeur un hash md5.
+
+- Nous le decryptons et nous voyons qu'il vaut 'false', nous changeons sa valeur avec le hash de 'true'.
+
+- Nous voila admin sur le site, une pop up apparait pour nous donner le flag.
