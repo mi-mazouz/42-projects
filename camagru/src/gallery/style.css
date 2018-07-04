@@ -1,0 +1,128 @@
+::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+.notification-margin {
+  margin-top: 50px;
+}
+
+.action-margin {
+  margin-top: 10px;
+}
+
+.is-overflow-scroll {
+  overflow: scroll;
+  max-height: 200px;
+}
+
+.is-margin-left {
+  margin-left: 5px;
+}
+
+.media-content {
+  background-color: gainsboro;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.media {
+  border-top: none !important;
+}
+
+.notification-margin {
+  margin-top: 56px;
+}
+
+p:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+
+.header {
+  box-shadow: 0 -1px 0 0 #d9d9ec inset;
+}
+
+.header, .is-spaced {
+  margin-bottom: 1.5rem;
+}
+
+.header .title {
+  display: inline-block;
+  border-bottom: 2px solid #44C2B4;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.is-pointer {
+  cursor: pointer;
+}
+
+.is-section-margin {
+  margin-top: 30px;
+}
+
+.card-header-icon {
+  padding-right: 0;
+  cursor: default;
+}
+
+.card-header-title {
+  padding-left: 0
+}
+
+.columns {
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.column {
+  flex-grow: inherit;
+}
+
+.column:last-child {
+  margin: auto;
+}
+
+.card-content {
+  padding: 0;
+  display: flex;
+}
+
+.is-margin-top:not(:first-child) {
+  margin-top: 20px;
+}
+
+.card-content .card {
+  width: 40%;
+}
+
+.card-content .content {
+  width: 60%;
+  padding: 5px 20px;
+}
+
+.is-comment-hidden {
+  max-width: 500px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-content > .card {
+    width: 100%;
+  }
+
+  .card-content > .content {
+    width: 100%;
+  }
+  .column:last-child {
+    margin-bottom: 5px;
+  }
+
+  .card-content {
+    display: block;
+  }
+}
